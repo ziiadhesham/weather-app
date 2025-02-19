@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Header with logo and search -->
+        <header>
+            <div class="logo">WW</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Location...">
+                <button class="search-btn" onclick="getWeather(searchInput.value)">🔍</button>
+            </div>
+        </header>
+
+        <!-- Main weather display -->
+        <main>
+            <div class="current-weather">
+                <div class="temperature">16°</div>
+                <div class="location">
+                    <h1>London</h1>
+                    <p>06:09 - Monday, 9 Sep '23</p>
+                </div>
+                <div class="weather-icon">☁️</div>
+            </div>
+
+            <div class="weather-details">
+                <h2>Weather Details...</h2>
+                
+                <div class="condition">THUNDERSTORM WITH LIGHT DRIZZLE</div>
+                
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span>Temp max</span>
+                        <span>19° 🌡️</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Temp min</span>
+                        <span>15° 🌡️</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Humidity</span>
+                        <span>58% 💧</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Cloudy</span>
+                        <span>86% ☁️</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Wind</span>
+                        <span>5km/h 💨</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
